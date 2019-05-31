@@ -25,13 +25,3 @@ Route::post('pokemons/catched', 'PokemonsController@allPokemonsCatched')->name('
 ///////////////////////////////////////////////////////////////*/
 Route::resource('collection', 'CollectionsController')->only(['index' ,'store', 'destroy']);
 Route::post('collection/all', 'CollectionsController@all')->name('collection.all');
-
-// Route::prefix('collection')->name('collection.')->group(function () {
-
-//     //Route::resource('photos', 'CollectionsController')->only(['index', 'show', 'create', 'destroy']);
-//     Route::resource('', 'CollectionsController')->only(['index', 'show', 'create', 'destroy']);
-
-//     Route::get('/', 'CollectionsController@index')->name('index');
-//     Route::post('add', 'CollectionsController@addPokemon')->name('add');
-//     Route::post('all', 'CollectionsController@all')->name('all');
-// });
